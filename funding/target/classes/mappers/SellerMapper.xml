@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.funding.myapp.repository.SellerDAO">
+<insert id="sellerInfoSave" parameterType="com.funding.myapp.domain.SellerVO">
+insert into seller (sel_id,sel_name,sel_phone,sel_info,sel_sns) values (#{sel_id},#{sel_name},#{sel_phone},#{sel_info},#{sel_sns})
+</insert>
+
+
+</mapper>	

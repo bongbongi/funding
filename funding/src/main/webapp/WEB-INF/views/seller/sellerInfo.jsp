@@ -46,16 +46,18 @@
     </div>
     
     <div class="rightBox">
+    <form action="/seller/sellerInfo" method="post">
         <table>
+        	<input type="text" name="sel_id">
             <tr>
                 <td>진행자명</td>
                 
-                <td><input type="text"></td>
+                <td><input type="text" name="sel_name"></td>
             </tr>
             <tr>
                 <td>전화번호</td>
                 
-                <td><input type="tel"></td>
+                <td><input type="tel" name="sel_phone"></td>
             </tr>
             <tr>
                 
@@ -63,13 +65,14 @@
             <tr>
                 <td>인스타 주소</td>
                 
-                <td><input type="text"></td>
+                <td><input type="text" name="sel_sns"></td>
                 
             </tr>
             <tr>
-                <td><button>저장 후 다음 단계로</button></td>
+                <td><button type="submit">저장 후 다음 단계로</button></td>
             </tr>
         </table>
+        </form> 
     </div>
 </body>
 </html>
